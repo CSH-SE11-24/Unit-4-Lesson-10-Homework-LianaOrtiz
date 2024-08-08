@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap Homework</title>
+  <link href="style.css" rel="stylesheet">
+  <!-- Task 1 (part 1): Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Task 2 (part 1): Create a navbar with the following links (all other links should be deleted or disabled) -->
+  <!-- Home (index.html), Cat Facts (facts.html), Learn More (https://en.wikipedia.org/wiki/Cat) -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facts.html">Cat Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Task 2 (part 2): Make sure facts.html has this same navbar so you can move back and forth. You will need to import Bootstrap in both files. -->
+  <!-- Extra Credit: Style the navbar and cards to be the same background color -->
+
+
+
+
+
+  <h1>Cats</h1>
+  <!-- Task 3: Add a carousel with 3 different cat images -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://pbs.twimg.com/media/DefM3PPXcAABTmm.jpg" class="d-block w-100" alt="kitten1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_781327003-1.jpg" class="d-block w-100" alt="kitten2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-names-2023-6500cf6ecd8ef.jpeg?crop=0.864xw:0.634xh;0.136xw,0.274xh&resize=1200:*" class="d-block w-100" alt="kitten3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <h2>Wild Cats</h2>
+  <!-- Task 4: Add 2 Bootstrap cards with different wildcats and descriptions of them -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Felis_silvestris_cafra.jpg" class="card-img-top" alt="african wildcat">
+    <div class="card-body">
+      <h5 class="card-title">African Wildcat</h5>
+      <p class="card-text">The African wildcat is a small wildcat species with sandy grey fur, pale vertical stripes on the sides and around the face. It is native to Africa, West and Central Asia, and is distributed to Rajasthan in India and Xinjiang in China.</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://felidaefund.org/media/cache/autosized/images/igallery/original/201-300/euro-wildcat-3-206-384.webp" class="card-img-top" alt="european wildcat">
+    <div class="card-body">
+      <h5 class="card-title">European Wildcat</h5>
+      <p class="card-text">The European wildcat is a small wildcat species native to continental Europe, Scotland, Turkey and the Caucasus. It inhabits forests from the Iberian Peninsula, Italy, Central and Eastern Europe to the Caucasus</p>
+    </div>
+  </div>
+
+  <!-- Task 1 (part 2): Link Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
